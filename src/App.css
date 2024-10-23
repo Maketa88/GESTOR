@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: #ba181b;
+  --azul: #00b4d8;
+  --azul-hover: #48cae4;
+  --rojo-hover: #e5383b;
+  --verde: #09a129;
+}
+
+body {
+  
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card-to-do {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 20px;
+  width: 700px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.counter-todos {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.counter-todos h3 {
+  font-weight: 500;
+}
+
+.counter-todos span {
+  color: #f29559;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li span {
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+ul li form {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-update {
+  border: none;
+  font-weight: 500;
+
+  font-size: 18px;
+
+  width: 100%;
+
+  outline: none;
+}
+
+.container-done {
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  border: 2px solid var(--verde);
+  cursor: pointer;
+}
+
+.container-done.active {
+  background-color: transparent; /* Elimina el fondo verde */
+  position: relative; /* Necesario para el posicionamiento del pseudoelemento */
+}
+
+.container-done.active::before {
+  content: "✔"; /* Símbolo del checkmark */
+  color: var(--verde); /* Color del checkmark */
+  font-size: 18px; /* Ajusta el tamaño según sea necesario */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el checkmark */
+}
+
+.text-decoration-dashed {
+  text-decoration: line-through;
+}
+
+.btn-delete {
+  background-color: var(--rojo);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-delete:hover {
+  background-color: var(--rojo-hover);
+}
+
+.btn-edit {
+  background-color: var(--azul);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-edit:hover {
+  background-color: var(--azul-hover);
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+.add-todo h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.input-add {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  flex: 1;
+
+  font-size: 17px;
+  color: #555;
+}
+
+.btn-add {
+  border: none;
+  outline: none;
+  padding: 5px 40px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 14px;
+
+  font-size: 17px;
+  color: black;
+}
+.btn-add,
+.input-add,
+.footer,
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
+
+.containercolor {
+  background-color: rgba(0, 0, 255, 0.74);
+  padding: 20px;
+}
+
+.containerColor {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+/* App.css */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.filter-btn {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.filter-btn:hover {
+  cursor:pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* App.css */
+
+.footer .filter-btn {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer .clear-btn {
+  border: none;
+  padding: 6px 6px;
+ 
+  color: red;
+  font-weight: bold;
+}
+.footer .clear-btn:hover {
+  
+  cursor:pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
