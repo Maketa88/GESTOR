@@ -77,11 +77,10 @@ export default function AppWrapper() {
     return (
         <Router>
             <Routes>
-                {/* Redirige de la ruta raíz a '/all' */}
                 <Route path="/" element={<Navigate to="/all" replace />} />
-                <Route path="/all" element={<App />} /> // Ruta para mostrar todas las tareas
-                <Route path="/pending" element={<App />} /> // Ruta para mostrar solo tareas pendientes
-                <Route path="/completed" element={<App />} /> // Ruta para mostrar solo tareas completadas
+                <Route path="/all" element={<App />} />
+                <Route path="/pending" element={<App />} />
+                <Route path="/completed" element={<App />} />
             </Routes>
         </Router>
     );
