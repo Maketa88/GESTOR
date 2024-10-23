@@ -1,4 +1,4 @@
-* {
+organiza la media query css segun mis estilos para que quede repsonsivo * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +13,7 @@
 }
 
 body {
+  
   max-width: 1200px;
   margin: 10px auto;
   display: flex;
@@ -24,12 +25,12 @@ body {
   padding: 25px;
   border-radius: 20px;
   width: 700px;
+ 
 }
 
 h1 {
   text-align: center;
   color: white;
-  font-size: 24px; /* Ajustado aquí para asegurar un tamaño de fuente correcto */
 }
 
 .counter-todos {
@@ -80,8 +81,11 @@ ul li form {
 .input-update {
   border: none;
   font-weight: 500;
+
   font-size: 18px;
+
   width: 100%;
+
   outline: none;
 }
 
@@ -167,6 +171,7 @@ form {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   flex: 1;
+
   font-size: 17px;
   color: #555;
 }
@@ -177,15 +182,16 @@ form {
   padding: 5px 40px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
   border-radius: 14px;
+
   font-size: 17px;
   color: black;
 }
-
 .btn-add,
 .input-add,
 .footer,
 h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .btn-add:hover {
@@ -204,10 +210,14 @@ h1 {
   justify-content: space-evenly;
 }
 
+/* App.css */
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+
   padding: 20px;
   background-color: #f1f1f1;
   border-top: 1px solid #ddd;
@@ -221,66 +231,50 @@ h1 {
 }
 
 .filter-btn:hover {
-  cursor: pointer;
+  cursor:pointer;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+
+
+/* App.css */
 
 .footer .filter-btn {
   margin-right: 10px;
   text-decoration: none;
   color: black;
   font-weight: bold;
+  
 }
 
 .footer .clear-btn {
   border: none;
   padding: 6px 6px;
+ 
   color: red;
   font-weight: bold;
 }
-
 .footer .clear-btn:hover {
-  cursor: pointer;
+  
+  cursor:pointer;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Media Queries */
+
 @media (max-width: 900px) {
   body {
-    max-width: 100%; /* Ajustamos el ancho máximo del cuerpo */
-    padding: 0 10px; /* Añadimos un poco de padding */
+    max-width: 100%; /* Ajustamos las imágenes al 100% en pantallas pequeñas */
   }
 
   .card-to-do {
     max-width: 100%; /* Elimina la restricción de ancho en pantallas pequeñas */
-    padding: 15px; /* Ajustamos el padding */
   }
 
-  h1 {
-    font-size: 20px; /* Ajustamos el tamaño de fuente para pantallas pequeñas */
+  p {
+    font-size: 16px; /* Aseguramos un tamaño de fuente más pequeño en pantallas pequeñas */
   }
-
-  .counter-todos span {
-    font-size: 20px; /* Ajustamos el tamaño del contador */
-  }
-
- 
-
-  .input-update,
-  .input-add {
-    font-size: 16px; /* Ajustamos el tamaño de la fuente en inputs */
-  }
-
-  .btn-add,
-  .btn-delete,
-  .btn-edit {
-    padding: 10px; /* Ajustamos el padding de los botones */
-  }
-
- 
-
-  .footer .filter-btn,
-  .footer .clear-btn {
-    margin-bottom: 10px; /* Añadimos espacio entre los botones en la footer */
-  }
+  
+}
+h1{
+  text-align: center;
+  font-size: 24px;
 }
