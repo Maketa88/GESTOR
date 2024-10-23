@@ -24,6 +24,7 @@ body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   padding: 25px;
   border-radius: 20px;
+  width: 700px;
  
 }
 
@@ -213,9 +214,9 @@ h1 {
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  
 
   padding: 20px;
   background-color: #f1f1f1;
@@ -242,7 +243,7 @@ h1 {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  
 }
 
 .footer .clear-btn {
